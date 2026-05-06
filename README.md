@@ -36,7 +36,7 @@ Each router connects to its own campus switch + host machines. Inter-router link
 
 ## Static Routing Configuration
 
-### Router0 — Main Campus
+### Router0 — Campus1(MAIN)
 
 | Destination | Mask | Next Hop |
 |-------------|------|----------|
@@ -46,7 +46,7 @@ Each router connects to its own campus switch + host machines. Inter-router link
 | 130.10.0.0 | 255.255.0.0 | 192.120.10.2 |
 | 131.10.0.0 | 255.255.0.0 | 192.120.10.2 |
 
-### Router1 — North Campus
+### Router1 — Campus2(SECOND)
 
 | Destination | Mask | Next Hop |
 |-------------|------|----------|
@@ -56,7 +56,7 @@ Each router connects to its own campus switch + host machines. Inter-router link
 | 130.10.0.0 | 255.255.0.0 | 193.120.10.2 |
 | 193.120.10.0 | 255.255.255.0 | 193.120.10.2 |
 
-### Router2 — South Campus
+### Router2 — Campus3(THIRD)
 
 | Destination | Mask | Next Hop |
 |-------------|------|----------|
@@ -65,7 +65,7 @@ Each router connects to its own campus switch + host machines. Inter-router link
 | 131.10.0.0 | 255.255.0.0 | 193.120.10.1 |
 | 130.10.0.0 | 255.255.0.0 | 194.120.10.2 |
 
-### Router3 — East Campus
+### Router3 — Campus4(FOURTH)
 
 | Destination | Mask | Next Hop |
 |-------------|------|----------|
@@ -79,7 +79,7 @@ Each router connects to its own campus switch + host machines. Inter-router link
 
 ## Router CLI Configuration Screenshots
 
-### Router0 — Main Campus
+### Router0 — Campus1(MAIN)
 
 **Figure 1:** FastEthernet0/0 LAN interface (128.10.7.16/16)
 
@@ -95,7 +95,7 @@ Each router connects to its own campus switch + host machines. Inter-router link
 
 ---
 
-### Router1 — North Campus
+### Router1 — Campus2(SECOND)
 
 **Figure 4:** FastEthernet0/0 LAN interface (131.10.7.16/16)
 
@@ -111,7 +111,7 @@ Each router connects to its own campus switch + host machines. Inter-router link
 
 ---
 
-### Router2 — South Campus
+### Router2 — Campus3(THIRD)
 
 **Figure 7:** FastEthernet0/0 LAN interface (129.10.7.16/16)
 
@@ -131,7 +131,7 @@ Each router connects to its own campus switch + host machines. Inter-router link
 
 ---
 
-### Router3 — East Campus
+### Router3 — Campus4(FOURTH)
 
 **Figure 11:** FastEthernet0/0 LAN interface (130.10.7.16/16)
 
